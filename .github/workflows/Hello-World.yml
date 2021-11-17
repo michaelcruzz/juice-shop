@@ -43,7 +43,7 @@ job1:
         uses: actions/checkout@v2
       - run: echo Hello Windows world!
 job3:    
-    runs-on: unbuntu-latest
+    runs-on: ubuntu-latest
     needs: [job1, job2]
     steps:
       - name: imprime 'hello world'
