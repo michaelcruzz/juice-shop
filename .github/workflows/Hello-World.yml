@@ -38,6 +38,8 @@ jobs:
 job2:
   runs-on: windows-latest
 
-  steps:
-  - uses: action/checkout@v2
+steps:
+  - name: checkout do repositório
+  - uses: actions/checkout@v2
+  - name: Imprime hello World
   - run: echo Hello Windows World!
